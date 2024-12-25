@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Tool</title> 
+
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="https://kit.fontawesome.com/347cce17c7.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-Gummy">
+    <section class="px-4 bg-slate-300 h-screen overflow-y-scroll flex items-center">
+        <div class="container mx-auto max-w-xl">
+            <h1 class="text-center font-semibold text-3xl text-slate-700">To-Do List</h1>
+            <h4 class="text-center font-light text-xl text-slate-500">Create your <span class="text-red-500/80">Tasks</span></h4>
+            <form class="bg-white px-8 py-4 mt-4 rounded-lg shadow-md grid grid-cols-1 gap-y-6">
+                <label for="todoText" class="text-slate-700  text-xl w-fit">Add Task :</label>
+                
+                <div class="flex gap-x-4">
+                    <input type="text" id="todoText" placeholder="Enter your task" class="outline-none caret-red-500 w-full ps-4 rounded-md focus:ring-2 ring-red-400">
+                    <button type="button" id="todoAdd" onclick="addTodo()" class="bg-red-500 text-white text-2xl w-20 h-12 rounded-md hover:bg-red-400 active:bg-red-500 transition-colors"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </form>
+
+            <h2 class="text-center font-semibold text-xl text-slate-700 mt-8 border-b-2 border-slate-500 max-w-lg mx-auto">Tasks</h2>
+            <ul id="todoList">
+
+            </ul>
+        </div>
+    </section>
+
+    <script src="./Public/js/index.js"></script>
+</body>
+</html>
